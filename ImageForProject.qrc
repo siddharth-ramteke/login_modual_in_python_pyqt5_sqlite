@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="menuIcon">
+    <file>Images/menuIcon/addUser.png</file>
+    <file>Images/menuIcon/blockUser.png</file>
+    <file>Images/menuIcon/listUser.png</file>
+    <file>Images/menuIcon/tools.png</file>
+  </qresource>
+</RCC>

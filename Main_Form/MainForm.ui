@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuUser">
+     <property name="title">
+      <string>User</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImageForProject.qrc">
+       <normaloff>:/menuIcon/Images/menuIcon/tools.png</normaloff>:/menuIcon/Images/menuIcon/tools.png</iconset>
+     </property>
+     <addaction name="actionAdd_New_User"/>
+     <addaction name="actionList_All_User"/>
+     <addaction name="actionBlock_User"/>
+    </widget>
+    <addaction name="menuUser"/>
+   </widget>
+   <addaction name="menuTools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_New_User">
+   <property name="icon">
+    <iconset resource="../ImageForProject.qrc">
+     <normaloff>:/menuIcon/Images/menuIcon/addUser.png</normaloff>:/menuIcon/Images/menuIcon/addUser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add New User</string>
+   </property>
+  </action>
+  <action name="actionList_All_User">
+   <property name="icon">
+    <iconset resource="../ImageForProject.qrc">
+     <normaloff>:/menuIcon/Images/menuIcon/listUser.png</normaloff>:/menuIcon/Images/menuIcon/listUser.png</iconset>
+   </property>
+   <property name="text">
+    <string>List All User</string>
+   </property>
+  </action>
+  <action name="actionBlock_User">
+   <property name="icon">
+    <iconset resource="../ImageForProject.qrc">
+     <normaloff>:/menuIcon/Images/menuIcon/blockUser.png</normaloff>:/menuIcon/Images/menuIcon/blockUser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Block User</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../ImageForProject.qrc"/>
+ </resources>
+ <connections/>
+</ui>
